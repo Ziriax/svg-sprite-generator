@@ -15,7 +15,7 @@ let writeToFile = function (destPath, content) {
 
 let getSpriteXml = function (svgs) {
     return '<?xml version="1.0" encoding="utf-8"?>' + "\n" +
-        '<svg xmlns="http://www.w3.org/2000/svg">' + "\n" +
+        '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">' + "\n" +
         svgs.map(function (s) {
             return '<symbol' + 
                 (s.id ? (' id="' + s.id + '"') : '') +

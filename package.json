@@ -1,6 +1,6 @@
 {
-  "name": "svg-sprite-generator",
-  "version": "0.0.6",
+  "name": "sts-svg-sprite-generator",
+  "version": "0.0.7",
   "description": "A SVG sprite file generator",
   "main": "./lib/main.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/frexy/svg-sprite-generator.git"
+    "url": "https://github.com/Ziriax/svg-sprite-generator"
   },
   "bin": {
     "svg-sprite-generate": "bin/svg-sprite-generate"
