@@ -1,14 +1,21 @@
-module.exports = function(grunt) {
-    
+module.exports = function (grunt) {
+
     grunt.initConfig({
-        exec: { 
-            babel: {
-                command: 'babel src -d lib',
-                stdout: true
+        babel: {
+            options: {
+                "sourceMap": false
+            },
+            dist: {
+                files: [{
+                    "expand": true,
+                    "cwd": "src",
+                    "src": ["**/*.js"],
+                    "dest": "lib"
+                }]
             }
-        }
+        },
     });
 
-    grunt.loadNpmTasks('grunt-exec');
-    grunt.registerTask('default', ['exec']);
-}
+    grunt.loadNpmTasks('grunt-babel');
+    grunt.registerTask("default", ["babel"]);
+};
