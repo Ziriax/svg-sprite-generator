@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+    {
+      "type": "grunt",
+      "task": "babel",
+      "problemMatcher": [],
+      "label": "grunt: babel",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}

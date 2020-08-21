@@ -15,6 +15,7 @@ export default function () {
         .option("-l --list <list>", "List of files")
         .option("-o --output <output>", "Out put to file")
         .option("-s --sprite <sprite>", "Another sprite file")
+        .option("-p --prefix <prefix>", "Prefix of each symbol identifier")
         .parse(process.argv);
 
     let fnList = ["sprite", "csv", "directory", "list"].filter(function (i) {
@@ -51,9 +52,9 @@ export default function () {
         }, []);
 
         if (program.output) {
-            writer.writeToFile(program.output, svgs); 
+            writer.writeToFile(program.output, program.prefix, svgs); 
         } else {
-            writer.writeToConsole(svgs);
+            writer.writeToConsole(program.prefix, svgs);
         }
     });
 };

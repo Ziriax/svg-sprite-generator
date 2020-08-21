@@ -1,6 +1,6 @@
 {
   "name": "sts-svg-sprite-generator",
-  "version": "0.0.9",
+  "version": "1.0.0",
   "description": "A SVG sprite file generator",
   "main": "./lib/main.js",
   "scripts": {
