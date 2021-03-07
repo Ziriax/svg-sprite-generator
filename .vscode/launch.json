@@ -12,7 +12,7 @@
         "<node_internals>/**"
       ],
       "program": "${workspaceFolder}\\bin\\svg-sprite-generate",
-      "args": ["-d" ,"${workspaceFolder}/tmp/svgo/", "-o", "${workspaceFolder}/tmp/__icons", "-p", "prefix_"]
+      "args": ["-p", "_", "-d" ,"v:/tmp/svgo/", "-o", "v:/tmp/test.svg"]
     }
   ]
 }
