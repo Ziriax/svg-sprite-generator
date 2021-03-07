@@ -1,3 +1,3 @@
 var generator = require("../lib/generator");
-generator();
+generator.default();
 

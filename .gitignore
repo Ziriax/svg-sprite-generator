@@ -28,3 +28,5 @@ node_modules
 
 # ignore the agignore file that's used by Vim's ctrlP
 .agignore
+
+lib/*
